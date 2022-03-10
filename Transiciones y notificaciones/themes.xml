@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Transiciones" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <!--Here we're enabling the use of transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- I'm attaching the transition I need to use -->
+        <item name="android:windowEnterTransition">@transition/trans_anim</item>
+        <item name="android:windowEnterTransition" tools:ignore="DuplicateDefinition">@transition/transition_ejemplo</item>
+        <item name="android:windowExitTransition" tools:ignore="DuplicateDefinition">@transition/transition_ejemplo</item>
+        <item name="android:windowExitTransition" tools:ignore="DuplicateDefinition">@transition/trans_anim</item>
+    </style>
+</resources>
